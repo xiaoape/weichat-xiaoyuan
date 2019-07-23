@@ -1,0 +1,6 @@
+<view class="classic-container">
+	<image src="{{img}}" class="classic-img" bindtap="getBook" />
+	<text class="content">{{title}}</text>
+	<text class="zhaiyao">{{zhaiyao}}</text>
+</view>
+

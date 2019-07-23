@@ -1,0 +1,14 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+	<view>
+		<image src="../../images/essay/wallpaper.jpg" style="width:690rpx; height:350rpx;" />
+	</view>
+	<text class="who">我们是谁</text>
+	<text class="zero">“零点工作室”成立于2014年4月，是江西农业大学一个致力于研究数据结构与算法，移动互联技术，大数据，人工智能，数据挖掘，社会工程学，web，.net等软件前沿技术的工作室。</text>
+	<text class="zhize">该小程序由三名工作室大三成员共同开发，因技术和经验的不成熟，程序若出现bug还望见谅，也希望您能够及时提出反馈。
+</text>
+	<text class="who">为什么做这个小程序？</text>
+	<text class="zhize">曾经有一个当作家的想法，当我经历一些事有一些感悟我通常都会记录下来。但是当我升入更高的年级，我发现我的学弟学妹或者是身边的人再走我以前走过的弯路，为了让广大学子能少走点弯路，我便萌发了做这个小程序的想法并为之实践。
+	</text>
+</view>
+

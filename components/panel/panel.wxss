@@ -1,0 +1,31 @@
+/* components/panel/panel.wxss */
+
+.container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom:solid 1rpx gray;
+}
+.panel-header{
+    display:flex;
+    flex-direction:row;
+    padding-top:5rpx;
+    justify-content: space-between;
+    padding-left:10rpx;
+}
+.panel-left{
+    margin-right:5rpx;
+}
+
+.panel-right{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width:450rpx;
+    height:200rpx;
+}
+.time{
+    
+}

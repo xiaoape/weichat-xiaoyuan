@@ -1,0 +1,27 @@
+/* pages/tougao/tougao.wxss */
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:730rpx;
+    margin:50rpx 10rpx;
+}
+.welcome5{
+    display:flex;
+}
+.welcome{
+    display:flex;
+    text-indent: 60rpx;
+}
+.welcome2{
+    display:flex;
+}
+.welcome3{
+    display:flex;
+}
+.welcome4{
+    display:flex;
+}
+.bg1{
+    background-color:#D8E7F8;
+}

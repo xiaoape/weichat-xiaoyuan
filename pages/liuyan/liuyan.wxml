@@ -1,0 +1,32 @@
+<!--pages/liuyan/liuyan.wxml-->
+<view class="liuyan-container">
+	<view class="liuyan-header">
+		<text class="biaoti">{{books.biaoti}}</text>
+		<text class="biaoti1">{{books.content}}</text>
+		<image src="{{books.image}}" style="width:730rpx;" />
+	</view>
+	<view class="liuyan-body">
+		<block wx:for="{{books.pinglun}}" :key="{{item}}">
+			<view class="neirong">
+				<image src="../../images/book/yonghu.jpg" class="yonghu" />
+				<text class="pinglun">{{item}}</text>
+			</view>
+		</block>
+	</view>
+	<view class="section">
+		<view class="login">
+			<form bindsubmit="formSubmit">
+				<input
+				 name="comment"
+				 class="login-input"
+				 type="text"
+				 placeholder="快来评论一波吧"
+				 focus="true"
+				 value="{{Ivalue}}"
+				/>
+				<button class="btn_login" formType="submit">提交评论</button>
+			</form>
+		</view>
+	</view>
+</view>
+

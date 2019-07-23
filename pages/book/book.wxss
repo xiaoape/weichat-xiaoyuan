@@ -1,0 +1,40 @@
+/* pages/book/index.wxss */
+.userinfo-avatar {
+    overflow:hidden;
+    position:absolute;
+    width: 160rpx;
+    height: 160rpx;
+    /* margin: 20rpx; */
+    /* margin-top: 50rpx; */
+    /* border-radius: 50%; */
+    border: 2px solid #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    z-index:5;
+    top:390rpx;
+    right:25rpx;
+  }
+  .userinfo-name{
+    overflow:hidden;
+    position:absolute;
+    width: 200rpx;
+    height: 160rpx;
+    z-index:5;
+    top:400rpx;
+    right:110rpx;
+    color:white;
+  }
+  .tianjia{
+    padding:10rpx;
+    overflow:hidden;
+    position:absolute;
+    width: 80rpx;
+    height: 80rpx;
+    z-index:5;
+    top:15rpx;
+    right:10rpx;
+  }
+  .header-container{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:80rpx;
+  }

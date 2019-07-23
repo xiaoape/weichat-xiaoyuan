@@ -1,0 +1,33 @@
+<form bindsubmit="formSubmit" id='2' bindreset="formReset">
+	<view class='caigou_centent'>描述说明</view>
+	标题：
+	<input
+	 name='biaoti'
+	 value='{{program_id}}'
+	 placeholder='输入标题'
+	 bindconfirm="done"
+	/>
+	正文：
+	<textarea
+	 class='textarea'
+	 placeholder="有什么想对白哥说的嘛"
+	 name="content"
+	 value='{{formdata}}'
+	/>
+
+	<view class="big-logos">
+		<view class="preimg">
+		<block wx:for="{{img_arr}}">  
+			<view class='logoinfo'>  
+				<image src='{{item}}' style="width:300rpx;height:300rpx;border:solid 1px gray"></image>  
+			</view>  
+  	</block>
+		</view>
+		<view>
+		<image bindtap="upimg" src='../../images/book/tianjia.png' style="width:300rpx;height:300rpx;"></image> 
+		</view>  
+
+</view>
+      <button class='img-btn' formType="submit">发布</button>  
+</form>
+

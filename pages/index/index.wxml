@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="header">
+		<epsoide-cmp class="epsoide" index="{{classic.index}}" />
+		<view class="like-container">
+			<like-cmp
+			 bind:like="onLike"
+			 class="like"
+			 like="{{like}}"
+			 count="{{count}}"
+			/>
+			<img-btn-cmp class="share-btn" open-type="share">
+				<image class="share" slot="img" src="/images/icon/share.png" />
+			</img-btn-cmp>
+		</view>
+	</view>
+	<view class="bianping">
+		<essay-cmp img="{{classic.image}}" zhaiyao ="{{classic.zhaiyao}}" xiangqing="{{classic}}" />
+	</view>
+	<navi-cmp
+	 class="navi"
+	 latest="{{latest}}"
+	 first="{{first}}"
+	 catch:left="onNext"
+	 catch:right="onPrevious"
+	 title="{{classic.title}}"
+	/>
+</view>
+

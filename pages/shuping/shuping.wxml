@@ -1,0 +1,64 @@
+<view class="container more">
+	<view class="user flex-wrp">
+
+		<img-btn-cmp
+		 wx:if="{{!hasUserInfo}}"
+		 open-type="getUserInfo"
+		 class="avatar-position"
+		 bind:getuserinfo="onGetUserInfo"
+		>
+			<image slot="img" class="avatar" src="/images/my/my.png" />
+		</img-btn-cmp>
+		<view class="avatar-container avatar-position">
+			<image src="{{userInfo.avatarUrl}}" wx:if="{{hasUserInfo}}" class="avatar" />
+		</view>
+		<view class="user-info flex-item">
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+			<text class="edit">我的世界我做主</text>
+		</view>
+	</view>
+
+	<view class="my">
+		<view class="my-item flex-wrp" bindtap="MyFabu">
+			<view class="myitem-icon flex-item">
+				<image src="../../images/eye.png" />
+			</view>
+			<view class="myitem-name flex-item">
+				<text>我的发布</text>
+			</view>
+		</view>
+		<view class="my-item flex-wrp" bindtap="sourceBook">
+			<view class="myitem-icon flex-item">
+				<image src="../../images/draft.png" />
+			</view>
+			<view class="myitem-name flex-item">
+				<text>欢迎来稿</text>
+			</view>
+		</view>
+		<view class="my-item flex-wrp" bindtap="beiwang">
+			<view class="myitem-icon flex-item">
+				<image src="../../images/recent.png" />
+			</view>
+			<view class="myitem-name flex-item">
+				<text>查看日历</text>
+			</view>
+		</view>
+		<view class="my-item flex-wrp">
+			<view class="myitem-icon flex-item">
+				<image src="../../images/book.png" />
+			</view>
+			<view class="myitem-name flex-item" bindtap="AboutUs">
+				<text>关于我们</text>
+			</view>
+		</view>
+		<view class="my-item flex-wrp" bindtap="fankui">
+			<view class="myitem-icon flex-item">
+				<image src="../../images/live.png" />
+			</view>
+			<view class="myitem-name flex-item">
+				<text>问题反馈</text>
+			</view>
+		</view>
+	</view>
+</view>
+

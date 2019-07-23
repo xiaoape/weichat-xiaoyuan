@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/book/book",
+    "pages/book-detail/detail",
+    "pages/liuyan/liuyan",
+    "pages/shuping/shuping",
+    "pages/fabu/fabu",
+    "pages/about/about",
+    "pages/tougao/tougao",
+    "pages/beiwang/beiwang",
+    "pages/myfabu/myfabu",
+    "pages/fankui/fankui"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小猿杂谈",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "color": "#c7c7c7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "/images/tab/classic@highlight.png",
+        "iconPath": "/images/tab/classic.png",
+        "text": "周览"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "selectedIconPath": "/images/tab/book@highlight.png",
+        "iconPath": "/images/tab/book.png",
+        "text": "杂谈"
+      },
+      {
+        "pagePath": "pages/shuping/shuping",
+        "selectedIconPath": "/images/tab/my@highlight.png",
+        "iconPath": "/images/tab/my.png",
+        "text": "个人"
+      }
+    ]
+  }
+}

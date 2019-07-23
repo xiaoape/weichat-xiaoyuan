@@ -1,0 +1,13 @@
+<!--components/Mliuyan/myliuyan.wxml-->
+<view>
+	<view wx-if="{{pinglun.length == 0}}">暂时还没有人给您留言</view>
+	<view wx-if="{{pinglun.length!==0}}">
+		<block wx:for="{{pinglun}}" :key="{{item}}">
+			<view class=" neirong">
+				<image src="../../images/book/yonghu.jpg" class="yonghu" />
+				<text class="pinglun">同学:{{item}}</text>
+			</view>
+		</block>
+	</view>
+</view>
+

@@ -1,0 +1,8 @@
+<!--pages/fankui/fankui.wxml-->
+<view class="container">
+	<text>
+	由于时间仓促和经验不足，若小程序存在问题，还请您原谅，您可以致电告知我们。联系电话：***
+	您也可以加入QQ群向我们反馈，QQ群：217113067
+    </text>
+</view>
+

@@ -1,0 +1,22 @@
+/* components/Mliuyan/myliuyan.wxss */
+.neirong{
+    display:flex;
+    flex-direction: row;
+    width:730rpx;
+    align-items:center;
+    justify-content: space-around;
+    padding-top:10rpx;
+    padding-bottom: 10rpx;
+    border-top: 1px solid gray;
+}
+.yonghu{
+    display:flex;
+    width:150rpx;
+    height:150rpx;
+}
+.pinglun{
+    width:500rpx;
+    display:flex;
+    /*下面是自动换行的代码*/
+    word-break:break-all;
+}

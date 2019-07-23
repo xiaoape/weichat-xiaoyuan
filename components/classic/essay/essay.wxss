@@ -1,0 +1,39 @@
+.classic-img {
+  width: 100%;
+  height: 600rpx;
+  border-radius: 20rpx;
+  /* margin-bottom:120rpx; */
+}
+
+.classic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #c0c0c0;
+  background: #fff;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  font-size: 16px;
+}
+
+/* 文章的样式 */
+.content {
+  font-size:18px;
+  color: transparent;
+  background-color: black;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
+  -webkit-background-clip: text;
+}
+.author{
+  text-align:right;
+}
+.zhaiyao{
+  height:100rpx;
+  overflow:hidden;
+}

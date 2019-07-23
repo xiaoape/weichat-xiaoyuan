@@ -1,0 +1,34 @@
+<!--pages/book/index.wxml-->
+<view class="header-container">
+	<view>
+		<image src="../../images/book/logo.jpeg" style="width:750rpx;" />
+		<view class="tianjia" bind:tap="fabu">
+			<image src="../../images/book/tianjia.png" style="width:70rpx;height:70rpx;" />
+		</view>
+		<view class="userinfo-name">
+			<open-data type="userNickName" />
+		</view>
+		<view class="userinfo-avatar">
+			<open-data type="userAvatarUrl" />
+		</view>
+	</view>
+</view>
+<scroll-view
+ scroll-y="true"
+ class="container"
+ lower-threshold="1"
+ bindscrolltolower="lower"
+>
+	<view class="" hover-class="none" hover-stop-propagation="false">
+		<block
+		 wx:for="{{feed}}"
+		 wx:for-index="idx"
+		 wx:for-item="item"
+		 data-idx="{{idx}}"
+		>
+			<panel shixiang="{{item}}" />
+		</block>
+
+	</view>
+</scroll-view>
+

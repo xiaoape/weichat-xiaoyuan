@@ -1,0 +1,13 @@
+<!--components/panel/panel.wxml-->
+<view class="container">
+	<view class="panel-header" bindtap="getMessage">
+		<view class="panel-left">
+			<image src="{{shixiang.image}}" style="width:130px; height:90px;" />
+		</view>
+		<view class="panel-right">
+			<text class="RWbiaoti">{{shixiang.biaoti}}</text>
+			<text class="time">{{time}}</text>
+		</view>
+	</view>
+</view>
+

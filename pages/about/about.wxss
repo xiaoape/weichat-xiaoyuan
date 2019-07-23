@@ -1,0 +1,23 @@
+/* pages/about/about.wxss */
+.container{
+    background-color:#fff;
+    padding:30rpx;
+}
+.who{
+    margin-top:30rpx;
+    font-size:50rpx;
+    font-weight:700;
+    color:#2f2f2f;
+    margin-bottom:20rpx;
+    text-align:center;
+}
+.zero{
+    text-indent:58rpx;
+    color:#000000;
+    font-weight:400; 
+}
+.zhize{
+    text-indent:58rpx;
+    color:#000000;
+    font-weight:400;
+}

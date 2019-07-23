@@ -1,0 +1,17 @@
+<!--pages/book-detail/detail.wxml-->
+<view class="container">
+	<view class="head">
+		<image src="{{book.image}}" style="width:730rpx;" />
+	</view>
+	<view class="sub-container">
+		<text class="headline">作者简介</text>
+    <text class='author'>{{book.author}}</text>
+	</view>
+	<view class="sub-container">
+		<text class='title'>{{book.title}}</text>
+		<text decode="{{true}}" class="content"> {{book.content}}</text>
+	</view>
+</view>
+
+<mask-cmp wx:if="{{posting}}" />
+

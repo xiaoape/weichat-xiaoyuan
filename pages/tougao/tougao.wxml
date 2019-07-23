@@ -1,0 +1,30 @@
+<!--pages/tougao/tougao.wxml-->
+<view class="container">
+	<view class="welcome5">
+		<image src="../../images/tougao-bann.jpg" style="width:730rpx;height:200rpx;" />
+	</view>
+	<view class="container">
+		<text class="welcome">小猿杂谈，欢迎大家来搞，每天我们将精选出一篇文章并展示首页日历中，一周会展示七篇文章日历</text>
+		<text class="welcome3">
+			<text class="bg1">一、投稿方式：</text>
+		使用电子邮件方式投递稿件，请按稿件内容投递到邮箱：liupeng20162341@163.com
+		</text>
+		<text class="welcome4">
+	<text class="bg1">二、投稿格式：</text>
+		<text>
+		投稿的内容必须包括：
+		1.文章标题
+		2.文章摘要（不超过20个字），
+		3.作者简介
+		4.一张封面图（照片不宜过大）
+		5.正文内容
+		以上5项缺一不可</text>
+		<text class="welcome2"/>
+
+		<text class="bg1">三、稿件著作权：
+</text>
+		1.投稿人保证其作品不含有违反宪法、法律及损害社会公共利益之内容。
+		2.编译的稿件，请注明出处并附带原文。</text>
+	</view>
+</view>
+

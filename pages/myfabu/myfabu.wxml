@@ -1,0 +1,18 @@
+<!--pages/MYfabu/myfabu.wxml-->
+<view class="liuyan-container">
+	<view wx-if="{{mybook.length===0}}">您还没有发布杂谈呢，赶紧去发布一下吧</view>
+	<view wx-if="{{mybook.length>0}}">
+		<block wx:for="{{mybook}}" :key="{{index}}">
+			<view class="mybooks">
+				<view class="liuyan-header">
+					<text class="biaoti">{{item.data.biaoti}}</text>
+					<image src="{{item.data.image}}" style="width:730rpx;" />
+				</view>
+				<view class="liuyan-body">
+					<myliuyan pinglun="{{item.data.pinglun}}" />
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+

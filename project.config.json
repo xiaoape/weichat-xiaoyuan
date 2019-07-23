@@ -1,0 +1,86 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx315537c7d84bd6f0",
+	"projectname": "wechat",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "留言界面",
+					"pathName": "pages/book/book",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "留言界面2",
+					"pathName": "pages/liuyan/liuyan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "book-detail",
+					"pathName": "pages/book-detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布内容",
+					"pathName": "pages/fabu/fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人",
+					"pathName": "pages/shuping/shuping",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/about/about",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "日历",
+					"pathName": "pages/beiwang/beiwang"
+				}
+			]
+		}
+	}
+}

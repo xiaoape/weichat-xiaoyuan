@@ -1,0 +1,15 @@
+.caigou_centent{
+  text-align: center;
+  font-size:16px;
+  font-weight:bold;
+}
+.big-logos{
+  display:flex;
+  flex-direction: row;
+}
+.preimg{
+  margin-right:30rpx;
+}
+.img-btn{
+  background-color: green;
+}
