@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.bookmate.mapper.TaskMapper">
+  <resultMap id="BaseResultMap" type="org.bookmate.entities.Task">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="biaoti" jdbcType="VARCHAR" property="biaoti" />
+    <result column="pubdate" jdbcType="DATE" property="pubdate" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, image, biaoti, pubdate, content
+  </sql>
+  <select id="selectTaskById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from task
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="getTasks" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from task  order by pubdate desc
+  </select>
+  
+  <select id="getTaskId" resultType="java.lang.Integer">
+    SELECT LAST_INSERT_ID()
+  </select>
+  
+  <delete id="deleteById" parameterType="java.lang.Integer">
+    delete from task
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insertTask"  parameterType="org.bookmate.entities.Task">
+    insert into task (image, biaoti, pubdate, 
+      content)
+    values (#{image,jdbcType=VARCHAR}, #{biaoti,jdbcType=VARCHAR}, #{pubdate,jdbcType=DATE}, 
+      #{content,jdbcType=VARCHAR})
+    
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+        SELECT LAST_INSERT_ID()
+    </selectKey>
+    
+  </insert>
+  
+  <update id="updateByPrimaryKeySelective" parameterType="org.bookmate.entities.Task">
+    update task
+    <set>
+      <if test="image != null">
+        image = #{image,jdbcType=VARCHAR},
+      </if>
+      <if test="biaoti != null">
+        biaoti = #{biaoti,jdbcType=VARCHAR},
+      </if>
+      <if test="pubdate != null">
+        pubdate = #{pubdate,jdbcType=DATE},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.bookmate.entities.Task">
+    update task
+    set image = #{image,jdbcType=VARCHAR},
+      biaoti = #{biaoti,jdbcType=VARCHAR},
+      pubdate = #{pubdate,jdbcType=DATE},
+      content = #{content,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
