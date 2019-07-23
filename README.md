@@ -18,13 +18,13 @@ java后端目录结构：
 
 ## 扫码体验
 
-
+![img](https://github.com/xiaoape/images/blob/master/xiaoyuan-zatan/gh_a0deb71f3d50_430.jpg?raw=true)
 
 ### 项目截图:
 
 
 
-
+算了图好大,懒得贴了
 
 
 
@@ -424,5 +424,3 @@ application/json
 
 
 * [微信开发者文档 ]:    <https://developers.weixin.qq.com/miniprogram/dev/index.html?t=19043011>
-
-*  
